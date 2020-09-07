@@ -20,3 +20,9 @@ $very-light-pink-four: #d8d8d8;
   -o-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }
+
+@mixin flex-center ($justify: flex-start) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}

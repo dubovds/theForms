@@ -1,3 +1,40 @@
-.btn {
+button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  line-height: 1;
+  outline: none;
+  cursor: pointer;
+}
 
+.btn {
+  @include font(13px, 500);
+  @include transition;
+  background-color: #d6e8ff;
+  border-radius: 6px;
+  color: #2285fc;
+  padding: 8px 10px;
+
+  &:before {
+    padding-right: 6px;
+    font-size: 13px;
+  }
+
+  &:hover {
+    background-color: $clear-blue;
+    color: #fff;
+  }
+}
+
+.btn-icon {
+  @include transition;
+  background-color: transparent;
+  padding: 7px;
+  color: #b1b1b1;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: #e8e8e8;
+    color: $black;
+  }
 }

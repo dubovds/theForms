@@ -52,6 +52,9 @@
 .icon-search:before {
     content: "\e908";
 }
+.icon-settings-b:before {
+    content: "\e909";
+}
 .icon-settings:after {
     content: "\e909";
 }

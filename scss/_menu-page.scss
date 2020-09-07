@@ -1,14 +1,11 @@
 .menu-page {
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-center(space-between);
   }
 
   &__item {
-    display: flex;
-    align-items: center;
+    @include flex-center();
   }
 
   &__button {
@@ -30,8 +27,7 @@
   }
 
   &__view {
-    display: flex;
-    align-items: center;
+    @include flex-center();
     margin-right: 49px;
   }
   &__view-item {
