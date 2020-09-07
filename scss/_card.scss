@@ -1,0 +1,86 @@
+.card {
+  background-color: #f9f9f9;
+  //margin-bottom: 24px;
+  padding: 30px;
+  border-radius: $radius;
+  //flex-basis: 19.584%;
+
+  &__wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 342px);
+    grid-gap: 1.4vw;
+    //display: flex;
+    //justify-content: space-between;
+    //flex-wrap: wrap;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 29px;
+    border-bottom: 1px solid #e9e9e9;
+  }
+
+  &__header-icon-container {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    background-color: #7557e5;
+    margin-right: 22px;
+    color: #ffffff;
+    border-radius: 8px;
+  }
+
+  &__header-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:before {
+      font-size: 18px;
+    }
+  }
+
+  &__header-title {
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    color: $black;
+  }
+
+  &__header-date {
+    font-size: 13px;
+    color: #bababa;
+  }
+
+  &__header-icon-mes {
+    position: absolute;
+    top: -12px;
+    left: -10px;
+    line-height: 1;
+    text-align: center;
+    padding: 5px 0;
+    width: 24px;
+    height: 24px;
+    background-color: #f8b923;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 2px solid #fff;
+  }
+
+
+
+
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    padding-top: 29px;
+    border-top: 1px solid #e9e9e9;
+  }
+}
+
