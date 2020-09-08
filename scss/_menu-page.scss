@@ -9,10 +9,11 @@
   }
 
   &__button {
-    background-color: $clear-blue;
+    @include transition;
+    background-color: #d6e8ff;
     padding: 12px 25px 12px;
     border-radius: 20px;
-    color: #ffffff;
+    color: #2285fc;
     border: none;
     outline: none;
     font-family: 'Roboto', sans-serif;
@@ -23,6 +24,11 @@
     &:before {
       font-size: 12px;
       padding-right: 13px;
+    }
+
+    &:hover {
+      background-color: $clear-blue;
+      color: #ffffff;
     }
   }
 

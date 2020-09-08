@@ -1,9 +1,18 @@
 .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: #f9f9f9;
   //margin-bottom: 24px;
   padding: 30px;
   border-radius: $radius;
   //flex-basis: 19.584%;
+  border: 1px solid transparent;
+  @include transition;
+
+  &:hover {
+    border: 1px solid #e9e9e9;
+  }
 
   &__wrapper {
     display: grid;
@@ -50,12 +59,13 @@
     color: $black;
   }
 
-  &__header-date {
+  &__date {
     font-size: 13px;
     color: #bababa;
   }
 
   &__header-icon-mes {
+    display: none;
     position: absolute;
     top: -12px;
     left: -10px;
@@ -70,9 +80,104 @@
     font-weight: bold;
     color: #ffffff;
     border: 2px solid #fff;
+
+    &.unread {
+      display: block;
+    }
   }
 
+  &__content {
+    margin-bottom: 24px;
+  }
 
+  &__content-header {
+    @include flex-center(space-between);
+    margin: 31px 0 24px;
+  }
+
+  &__view-all {
+    @include font(13px, 500);
+    color: #b1b1b1;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__title {
+    @include font(14px, 500);
+    color: #6a6a6a;
+  }
+
+  &__description {
+    display: none;
+    margin-top: 4px;
+    font-size: 13px;
+    color: #aeaeae;
+  }
+
+  &__content-item {
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    padding: 14px 20px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    @include transition;
+
+    &:hover {
+      border: 1px solid #e9e9e9;
+
+      .card__response-title {
+        color: $clear-blue;
+      }
+    }
+
+    &.unread:before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: -3px;
+      left: -3px;
+      border: solid 3px #f9f9f9;
+      background-color: #f8b923;
+      border-radius: 50%;
+    }
+  }
+
+  &__response-title {
+    @include font(15px, 500);
+    margin-bottom: 4px;
+    @include transition
+  }
+
+  &__content-file {
+    display: none;
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    color: #c6c6c6;
+
+    &:before {
+      font-size: 13px;
+    }
+  }
+
+  &__no-responses {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #eaeaea;
+
+    &:before {
+      font-size: 51px;
+    }
+  }
 
 
 
@@ -80,6 +185,25 @@
     @include flex-center(space-between);
     padding-top: 29px;
     border-top: 1px solid #e9e9e9;
+    margin-top: auto;
+  }
+}
+
+.card__content-item.file {
+  .card__content-file {
+    display: block;
+  }
+}
+
+.card__content.no-responses {
+  .card__content-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card__description,
+  .card__no-responses {
+    display: block;
   }
 }
 
