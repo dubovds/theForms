@@ -2,10 +2,19 @@
 
   &__wrapper {
     @include flex-center(space-between);
+
+    &_b-line {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #e9e9e9;
+    }
   }
 
   &__item {
     @include flex-center();
+  }
+
+  &__select {
+    margin-right: 50px;
   }
 
   &__button {
@@ -64,8 +73,104 @@
   }
 }
 
+.menu-page-settings {
+  @include flex-center();
+  margin-right: 26px;
+
+  &__item {
+    margin-left: 10px;
+  }
+
+  &__link {
+    @include transition;
+    @include font(15px, 500);
+    padding: 10px 16px;
+    background-color: transparent;
+    color: #6a6a6a;
+    border-radius: 20px;
+
+    &:before {
+      @include transition;
+      padding-right: 11px;
+    }
+
+    &:hover {
+      background-color: #e8e8e8;
+      color: $black;
+
+      &:before {
+        color: $black;
+      }
+    }
+  }
+}
+
 .title-page {
   font-size: 32px;
   font-weight: 900;
   color: $black;
+
+  &__select {
+    margin-left: 20px;
+  }
+
+  &__form-name {
+    display: flex;
+    align-items: center;
+  }
+
+  &__header-icon-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #7557e5;
+    margin-right: 20px;
+    color: #ffffff;
+    border-radius: 8px;
+  }
+
+  &__header-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:before {
+      font-size: 18px;
+    }
+  }
+
+  &__header-icon-mes {
+    display: none;
+    position: absolute;
+    top: -12px;
+    left: -10px;
+    line-height: 1;
+    text-align: center;
+    padding: 5px 0;
+    width: 24px;
+    height: 24px;
+    background-color: #f8b923;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 2px solid #fff;
+
+    &.unread {
+      display: block;
+    }
+  }
+
+  &__info {
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #bababa;
+
+    span {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
 }

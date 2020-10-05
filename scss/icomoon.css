@@ -61,3 +61,44 @@
 .icon-grid:before {
     content: "\e90a";
 }
+.icon-copies:before {
+    content: "\e90b";
+}
+.icon-load-more:before {
+    content: "\e90c";
+    color: #c6c6c6;
+}
+.icon-amazon:before {
+    content: "\e90d";
+    color: #f7a80d;
+}
+.icon-archive:before {
+    content: "\e90e";
+    color: #b1b1b1;
+}
+.icon-date:before {
+    content: "\e90f";
+    color: #c6c6c6;
+}
+.icon-download:before {
+    content: "\e910";
+}
+.icon-dropbox:before {
+    content: "\e911";
+    color: #0062ff;
+}
+.icon-edit:before {
+    content: "\e912";
+    color: #b1b1b1;
+}
+.icon-export:before {
+    content: "\e913";
+    color: #b1b1b1;
+}
+.icon-google-drive:before {
+    content: "\e914";
+    color: #4285f4;
+}
+.icon-eye:before {
+    content: "\e915";
+}

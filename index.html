@@ -61,9 +61,28 @@
           <div class="title-page">
             Forms Overview
           </div>
+
+          <div class="title-page__select">
+            <div class="custom__select">
+              <select>
+                <option value="-12">All Forms</option>
+                <option value="-11">Archive</option>
+              </select>
+            </div>
+          </div>
         </div>
         <div class="menu-page__item">
-          <div class=""></div>
+          <div class="menu-page__select">
+            <div class="custom__select">
+              <select>
+                <option value="-12">New responses</option>
+                <option value="-11">Form create date</option>
+                <option value="-10">Form publish date</option>
+                <option value="-9">New responses</option>
+                <option value="-8">Without responses</option>
+              </select>
+            </div>
+          </div>
           <div class="menu-page__view">
             <div class="menu-page__view-item grid active font-icon icon-grid"></div>
             <div class="menu-page__view-item list font-icon icon-menu"></div>
@@ -836,15 +855,11 @@
       </div>
       <!-- end cards list-->
     </div>
-    <select name="sources" id="sources" class="custom-select sources" placeholder="Source Type">
-      <option value="profile">Profile</option>
-      <option value="word">Word</option>
-      <option value="hashtag">Hashtag</option>
-    </select>
   </section>
 </div>
 
 <script src="js/main.js"></script>
+<script src="./js/select.js"></script>
 
 <script>
     var grid = document.getElementById('grid-view');
