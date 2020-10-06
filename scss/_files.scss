@@ -1,0 +1,105 @@
+.files {
+  margin-top: 20px;
+
+  &__row {
+    @include transition;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin-bottom: 6px;
+    padding: 13px 20px;
+    border-radius: 10px;
+    line-height: 1.15;
+    border: 1px solid transparent;
+
+    &:hover {
+      border-color: #e9e9e9;
+
+      .files__name {
+        color: $clear-blue;
+      }
+    }
+  }
+
+  &__date {
+    @include font(13px, normal);
+    flex-basis: 8.6%;
+    color: #bababa;
+    margin-right: 15px;
+  }
+
+  &__name {
+    @include transition;
+    @include font(15px, 500);
+    flex-basis: 41.3%;
+    color: $black;
+    margin-right: 15px;
+
+    &:before {
+      font-size: 12px;
+      color: #c6c6c6;
+      padding-right: 5px;
+    }
+  }
+
+  &__info {
+    span{
+      display: inline-block;
+
+      &:first-child {
+        @include font(14px, normal);
+        margin-right: 15px;
+        color: #bababa;
+      }
+
+      &:last-child {
+        @include font(13px, 500);
+        color: #a6a6a6;
+
+        &:before {
+          position: relative;
+          top: 1px;
+          font-size: 14px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    margin-left: auto;
+
+    .btn {
+      background-color: #f5f5f5;
+      color: #6a6a6a;
+
+      &:hover {
+        background-color: #2285fc;
+        color: #fff;
+      }
+    }
+  }
+
+  &__load-more {
+    @include transition;
+    @include font(13px, 500);
+    color: #bababa;
+    margin-top: 16px;
+
+    &:before {
+      @include transition;
+      position: relative;
+      top: 1px;
+      font-size: 12px;
+      padding-right: 10px;
+    }
+
+    &:hover {
+      color: $clear-blue;
+
+      &:before {
+        color: $clear-blue;
+      }
+    }
+  }
+}
