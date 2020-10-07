@@ -28,6 +28,9 @@
 .icon-arrow:before {
     content: "\e900";
 }
+.icon-arrow-a:after {
+    content: "\e900";
+}
 .icon-del:before {
     content: "\e901";
 }
@@ -93,7 +96,6 @@
 }
 .icon-export:before {
     content: "\e913";
-    color: #b1b1b1;
 }
 .icon-google-drive:before {
     content: "\e914";
@@ -104,5 +106,10 @@
 }
 .icon-local:before {
     content: "\e916";
+    color: #b1b1b1;
+}
+
+.icon-arrow-left:before {
+    content: "\e917";
     color: #b1b1b1;
 }

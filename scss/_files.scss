@@ -43,6 +43,7 @@
   }
 
   &__info {
+
     span{
       display: inline-block;
 
@@ -63,7 +64,14 @@
           padding-right: 10px;
         }
       }
+
+      &.black {
+        @include font(13px, 500);
+        color: $black;
+      }
     }
+
+
   }
 
   &__button {
@@ -100,6 +108,15 @@
       &:before {
         color: $clear-blue;
       }
+    }
+  }
+}
+
+.files_export {
+  .files__info {
+    span:last-child {
+      @include font(14px, normal);
+      line-height: 1.1;
     }
   }
 }

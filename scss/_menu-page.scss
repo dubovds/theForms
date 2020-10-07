@@ -103,6 +103,40 @@
       }
     }
   }
+
+  &__btn-link {
+    @include transition;
+    @include font(13px, 500);
+    position: relative;
+    padding: 8px 46px 8px 10px;
+    background-color: #f5f5f5;
+    color: #6a6a6a;
+    border-radius: 6px;
+
+    &:before {
+      @include transition;
+      padding-right: 11px;
+    }
+
+    &:after {
+      @include transition;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      font-size: 3px;
+      color: #b7b7b7;
+    }
+
+    &:hover {
+      background-color: #e8e8e8;
+      color: $black;
+
+      &:before,
+      &:after {
+        color: $black;
+      }
+    }
+  }
 }
 
 .title-page {
@@ -172,5 +206,16 @@
       display: inline-block;
       margin: 0 10px;
     }
+  }
+}
+
+.button-back {
+  border-right: 1px solid #d8d8d8;
+  margin-right: 23px;
+  padding: 5px 0;
+
+  &:before {
+    padding-right: 20px;
+    font-size: 10px;
   }
 }

@@ -1,0 +1,25 @@
+.footer {
+  @include font(13px, 500);
+  color: #a6a6a6;
+  margin-top: 60px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    @include transition;
+    color: #3790fc;
+    border-bottom: 1px solid #3790fc;
+
+    &:hover {
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  span {
+    color: #f8b923;
+  }
+}
