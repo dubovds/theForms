@@ -8,23 +8,3 @@ $black: #363636;
 $clear-blue: #2285fc;
 $very-light-pink-four: #d8d8d8;
 
-// mixins
-
-@mixin font($font-size, $font-weight) {
-  font-size: $font-size;
-  font-weight: $font-weight;
-}
-
-@mixin transition {
-  -webkit-transition: all .3s ease-in;
-  -moz-transition: all .3s ease-in;
-  -ms-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-}
-
-@mixin flex-center ($justify: flex-start) {
-  display: flex;
-  align-items: center;
-  justify-content: $justify;
-}

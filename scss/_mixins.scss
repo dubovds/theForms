@@ -1,0 +1,25 @@
+@mixin flex-center ($justify: flex-start) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
+
+@mixin flex ($align-items: normal, $justify: flex-start) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align-items;
+}
+
+
+@mixin font($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin transition {
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
