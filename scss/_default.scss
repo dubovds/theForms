@@ -5,9 +5,17 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: beige;
+  //background-color: beige;
   font-family: 'Roboto', sans-serif;
   line-height: normal;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -33,7 +41,7 @@ section {
 }
 
 .container {
-  max-width: 1470px;
+  width: 1470px;
   margin: 0 auto;
   padding: 0 15px;
 }

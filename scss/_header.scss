@@ -47,6 +47,13 @@
         transform: translateY(-50%);
       }
     }
+
+    &.active {
+      a {
+        color: $clear-blue;
+        border-bottom-color: $clear-blue;
+      }
+    }
   }
 
   a {

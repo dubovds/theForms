@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>view form empty</title>
+  <title>view form</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="scss/main.css">
 </head>
@@ -19,7 +19,7 @@
             </a>
           </li>
           <li>
-            <a href="statistics.html">
+            <a href="#">
               Statistics
             </a>
           </li>
@@ -61,7 +61,7 @@
           <div class="title-page__form-name">
             <div class="title-page__header-item">
               <div class="title-page__header-icon-container">
-<!--                you need add class {unread} to show this block -->
+                <!--                you need add class {unread} to show this block -->
                 <div class="title-page__header-icon-mes">
                   7
                 </div>
@@ -81,7 +81,7 @@
         <div class="menu-page__item">
           <div class="menu-page-settings">
             <div class="menu-page-settings__item">
-              <a href="#" class="menu-page-settings__link font-icon icon-export">
+              <a href="export.html" class="menu-page-settings__link font-icon icon-export">
                 Export
               </a>
             </div>
@@ -128,25 +128,114 @@
             </a>
           </div>
           <div class="filters-page__item">
-            <a href="#" class="filters-page__link">
+            <a href="view-files.html" class="filters-page__link">
               Attachments Files
             </a>
           </div>
         </div>
         <div class="filters-page__button">
-          <button class="btn font-icon icon-download">
-            Download all files
-          </button>
+          <div class="menu-page-settings">
+            <div class="menu-page-settings__item">
+              <button class="btn font-icon icon-date menu-page-settings__btn-link icon-arrow-a">
+                begin date
+              </button>
+            </div>
+            <div class="menu-page-settings__item">
+              <button class="btn font-icon icon-date menu-page-settings__btn-link icon-arrow-a">
+                end date
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="files">
+  <section class="view-form">
     <div class="container">
-      <div class="empty-form">
-        <div class="empty-form__icon font-icon icon-del"></div>
-        <div class="empty-form__text">
-          Form does not have response yet
+      <div class="view-form__wrapper">
+        <div class="view-form__item">
+          <div class="list-form-vf">
+            <div class="list-form-vf__row unread">
+              <a href="view-response.html" class="list-form-vf__link"></a>
+              <div class="list-form-vf__date">
+                <span>10:00</span> <span>18 May</span>
+              </div>
+              <div class="list-form-vf__name">
+                Untitle Response
+              </div>
+              <div class="list-form-vf__status">
+                Abandoned
+              </div>
+
+            </div>
+            <div class="list-form-vf__row">
+              <a href="view-response.html" class="list-form-vf__link"></a>
+              <div class="list-form-vf__date">
+                <span>10:00</span> <span>18 May</span>
+              </div>
+              <div class="list-form-vf__name">
+                doyle_zola@mayert.net
+              </div>
+
+            </div>
+            <div class="list-form-vf__row">
+              <a href="view-response.html" class="list-form-vf__link"></a>
+              <div class="list-form-vf__date">
+                <span>10:00</span> <span>18 May</span>
+              </div>
+              <div class="list-form-vf__name">
+                Daniel May
+              </div>
+              <div class="list-form-vf__status">
+                Abandoned
+              </div>
+            </div>
+            <div class="list-form-vf__row">
+              <a href="view-response.html" class="list-form-vf__link"></a>
+              <div class="list-form-vf__date">
+                <span>10:00</span> <span>18 May</span>
+              </div>
+              <div class="list-form-vf__name">
+                Lola Edwards
+              </div>
+
+            </div>
+            <div class="list-form-vf__row unread">
+              <a href="view-response.html" class="list-form-vf__link"></a>
+              <div class="list-form-vf__date">
+                <span>10:00</span> <span>18 May</span>
+              </div>
+              <div class="list-form-vf__name">
+                Untitle Response
+              </div>
+
+            </div>
+            <button class="files__load-more" id="load-more">
+              <span class="loop-icon">
+                <span class="font-icon icon-load-more"></span>
+              </span>
+              <span>Load more...</span>
+            </button>
+          </div>
+        </div>
+        <div class="view-form__item">
+          <div class="numbers-info-vf">
+              <div class="numbers-info-vf__item active">
+                <div class="numbers-info-vf__title">Form views</div>
+                <div class="numbers-info-vf__value">1890</div>
+                <div class="numbers-info-vf__text">Views for last 24 hours</div>
+              </div>
+              <div class="numbers-info-vf__item">
+                <div class="numbers-info-vf__title">Responses</div>
+                <div class="numbers-info-vf__value">218</div>
+                <div class="numbers-info-vf__text">Responses for last 24 hours</div>
+              </div>
+              <div class="numbers-info-vf__item">
+                <div class="numbers-info-vf__title">Abandoned</div>
+                <div class="numbers-info-vf__value">14</div>
+                <div class="numbers-info-vf__text">Responses for last 24 hours</div>
+              </div>
+          </div>
         </div>
       </div>
     </div>

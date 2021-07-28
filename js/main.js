@@ -19,3 +19,13 @@ body.addEventListener('click', (e) => {
     }
 });
 
+
+let loadButton = document.querySelector('#load-more');
+
+loadButton.onclick = function(){
+    loadButton.classList.add('active');
+    setTimeout(function () {
+        loadButton.classList.remove('active');
+    }, 5000)
+
+};

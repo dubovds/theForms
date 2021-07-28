@@ -91,22 +91,34 @@
   &__load-more {
     @include transition;
     @include font(13px, 500);
+    position: relative;
     color: #bababa;
     margin-top: 16px;
 
-    &:before {
-      @include transition;
-      position: relative;
-      top: 1px;
-      font-size: 12px;
-      padding-right: 10px;
+    & > span:last-child {
+      padding-left: 22px;
     }
+
+    //&:before {
+    //  @include transition;
+    //  position: relative;
+    //  top: 1px;
+    //  font-size: 12px;
+    //  padding-right: 10px;
+    //}
 
     &:hover {
       color: $clear-blue;
 
       &:before {
         color: $clear-blue;
+      }
+    }
+
+    &.active {
+      .loop-icon {
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
@@ -119,4 +131,22 @@
       line-height: 1.1;
     }
   }
+}
+
+.loop-icon {
+  @include transition;
+  opacity: 0;
+  visibility: hidden;
+  display: inline-block;
+  position: absolute;
+  animation: loop 2s linear infinite;
+
+  .font-icon:before {
+    font-size: 12px;
+  }
+}
+
+@keyframes loop {
+  from { transform: rotate(0)}
+  to {transform: rotate(360deg)}
 }

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?vfv7hr');
-  src:  url('fonts/icomoon.eot?vfv7hr#iefix') format('embedded-opentype'),
-  url('fonts/icomoon.ttf?vfv7hr') format('truetype'),
-  url('fonts/icomoon.woff?vfv7hr') format('woff'),
-  url('fonts/icomoon.svg?vfv7hr#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?pa12yq');
+  src:  url('fonts/icomoon.eot?pa12yq#iefix') format('embedded-opentype'),
+  url('fonts/icomoon.ttf?pa12yq') format('truetype'),
+  url('fonts/icomoon.woff?pa12yq') format('woff'),
+  url('fonts/icomoon.svg?pa12yq#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,41 +27,82 @@
 
 .icon-arrow:before {
   content: "\e900";
-  color: #b1b1b1;
 }
 .icon-del:before {
   content: "\e901";
-  color: #b1b1b1;
 }
 .icon-icon-1:before {
   content: "\e902";
-  color: #b1b1b1;
 }
 .icon-icon-2:before {
   content: "\e903";
-  color: #b1b1b1;
 }
 .icon-icon-3:before {
   content: "\e904";
-  color: #b1b1b1;
 }
 .icon-list:before {
   content: "\e905";
-  color: #b1b1b1;
 }
 .icon-menu:before {
   content: "\e906";
-  color: #b1b1b1;
 }
 .icon-plus:before {
   content: "\e907";
-  color: #b1b1b1;
 }
 .icon-search:before {
   content: "\e908";
-  color: #b1b1b1;
 }
 .icon-settings:before {
   content: "\e909";
-  color: #b1b1b1;
+}
+.icon-grid:before {
+  content: "\e90a";
+}
+.icon-copies:before {
+  content: "\e90b";
+}
+.icon-load-more:before {
+  content: "\e90c";
+}
+.icon-amazon:before {
+  content: "\e90d";
+}
+.icon-archive:before {
+  content: "\e90e";
+}
+.icon-date:before {
+  content: "\e90f";
+}
+.icon-download:before {
+  content: "\e910";
+}
+.icon-dropbox:before {
+  content: "\e911";
+}
+.icon-edit:before {
+  content: "\e912";
+}
+.icon-export:before {
+  content: "\e913";
+}
+.icon-google-drive:before {
+  content: "\e914";
+}
+.icon-eye:before {
+  content: "\e915";
+}
+.icon-local:before {
+  content: "\e916";
+}
+.icon-arrow-left:before {
+  content: "\e917";
+}
+.icon-action-icon-01:before {
+  content: "\e918";
+}
+.icon-fields-icon-01:before {
+  content: "\e919";
+}
+.icon-logic-icon-01:before {
+  content: "\e91a";
 }

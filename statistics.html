@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>statistics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <div class="header__item">
+      <div class="header__logo"></div>
+      <div class="header__menu">
+        <ul class="main-menu">
+          <li>
+            <a href="index.html">
+              Forms
+            </a>
+          </li>
+          <li class="active">
+            <a href="#">
+              Statistics
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Add-Ons
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Support
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__item">
+      <div class="header__search">
+        <ul class="main-menu">
+          <li class="main-search">
+            <div id="search">
+              <form>
+                <i class="font-icon icon-search" id="search-icon"></i>
+                <input type="text" id="search-input" name="search" autocomplete="off">
+              </form>
+            </div>
+          </li>
+          <li class="main-menu__settings">
+            <a href="#" class="font-icon icon-settings">Settings</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="menu-page">
+    <div class="container">
+      <div class="menu-page__wrapper">
+        <div class="menu-page__item">
+          <div class="title-page">
+            Forms Statistics
+          </div>
+
+          <div class="title-page__select">
+            <div class="custom__select">
+              <select>
+                <option value="-12">All Forms</option>
+                <option value="-11">Archive</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="statistics">
+    <div class="statistics-info">
+      <div class="statistics-info__row">
+        <div class="statistics-info__item active">
+          <div class="statistics-info__date">
+            <div class="period">Today</div>
+            <div class="update">Rsp. for last 24 hours</div>
+          </div>
+          <div class="statistics-info__number">
+            83
+          </div>
+        </div>
+        <div class="statistics-info__item">
+          <div class="statistics-info__date">
+            <div class="period">Week</div>
+            <div class="update">Rsp. for last 7 days</div>
+          </div>
+          <div class="statistics-info__number">
+            550
+          </div>
+        </div>
+        <div class="statistics-info__item">
+          <div class="statistics-info__date">
+            <div class="period">Month</div>
+            <div class="update">Rsp. for last 30 days</div>
+          </div>
+          <div class="statistics-info__number">
+            4871
+          </div>
+        </div>
+        <div class="statistics-info__item">
+          <div class="statistics-info__date">
+            <div class="period">All time</div>
+            <div class="update">Rsp. for all time</div>
+          </div>
+          <div class="statistics-info__number">
+            19009
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--    Place for charts-->
+    <div class="statistics-charts">
+      <div class="statistics-charts__item">Chart 1</div>
+      <div class="statistics-charts__item">Chart 2</div>
+    </div>
+<!--    End Place for charts-->
+
+    <div class="statistics-platforms">
+      <h2 class="statistics-platforms__title">
+        Statistics by platforms
+      </h2>
+      <div class="statistics-platforms__row">
+        <div class="statistics-platforms__item">
+          <div class="platforms__header">
+            <div class="platforms__header-item">
+              <div class="platforms__icon platforms__icon_ios">
+                <div class="font-icon icon-apple"></div>
+              </div>
+              <div class="">
+                <div class="platforms__title">IOS</div>
+                <div class="platforms__subtitle">Rsp. for all devices</div>
+              </div>
+            </div>
+            <div class="platforms__header-item">
+              <div class="platforms__header-total">6</div>
+            </div>
+          </div>
+          <div class="platforms__content">
+            <div class="platforms__content-row">
+              <div class="platforms__content-item">
+                <div class="total-line"></div>
+                IPhone
+              </div>
+              <div class="platforms__content-total">3</div>
+            </div>
+            <div class="platforms__content-row">
+              <div class="platforms__content-item">
+                <div class="total-line"></div>
+                IPad
+              </div>
+              <div class="platforms__content-total">2</div>
+            </div>
+            <div class="platforms__content-row">
+              <div class="platforms__content-item">
+                <div class="total-line"></div>
+                Other
+              </div>
+              <div class="platforms__content-total">1</div>
+            </div>
+          </div>
+        </div>
+        <div class="statistics-platforms__item">
+          <div class="platforms__header">
+            <div class="platforms__header-item">
+              <div class="platforms__icon platforms__icon_android">
+                <div class="font-icon icon-android"></div>
+              </div>
+              <div class="">
+                <div class="platforms__title">Android</div>
+                <div class="platforms__subtitle">Rsp. for all devices</div>
+              </div>
+            </div>
+            <div class="platforms__header-item">
+              <div class="platforms__header-total">11</div>
+            </div>
+          </div>
+          <div class="platforms__content">
+            <div class="platforms__content-row">
+              <div class="platforms__content-item">
+                <div class="total-line"></div>
+                Smartphones
+              </div>
+              <div class="platforms__content-total">10</div>
+            </div>
+            <div class="platforms__content-row">
+              <div class="platforms__content-item">
+                <div class="total-line"></div>
+                Tablets
+              </div>
+              <div class="platforms__content-total">1</div>
+            </div>
+            <div class="platforms__content-row">
+              <div class="platforms__content-item">
+                <div class="total-line"></div>
+                Other
+              </div>
+              <div class="platforms__content-total">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="statistics-platforms__item">
+          <div class="platforms__header">
+            <div class="platforms__header-item">
+              <div class="platforms__icon platforms__icon_desktop">
+                <div class="font-icon icon-desktop"></div>
+              </div>
+              <div class="">
+                <div class="platforms__title">Desktop</div>
+                <div class="platforms__subtitle">Rsp. for all devices</div>
+              </div>
+            </div>
+            <div class="platforms__header-item">
+              <div class="platforms__header-total">46</div>
+            </div>
+          </div>
+          <div class="platforms__content">
+            <div class="platforms__content-row">
+              <div class="platforms__content-item">
+                <div class="total-line"></div>
+                Windows
+              </div>
+              <div class="platforms__content-total">27</div>
+            </div>
+            <div class="platforms__content-row">
+              <div class="platforms__content-item">
+                <div class="total-line"></div>
+                Mac OS
+              </div>
+              <div class="platforms__content-total">19</div>
+            </div>
+            <div class="platforms__content-row">
+              <div class="platforms__content-item">
+                <div class="total-line"></div>
+                Other
+              </div>
+              <div class="platforms__content-total">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="statistics-platforms__item">
+          <div class="platforms__header">
+            <div class="platforms__header-item">
+              <div class="platforms__icon platforms__icon_browsers">
+                <div class="font-icon icon-browser"></div>
+              </div>
+              <div class="">
+                <div class="platforms__title">Browsers</div>
+                <div class="platforms__subtitle">Rsp. for all devices</div>
+              </div>
+            </div>
+            <div class="platforms__header-item">
+              <div class="platforms__header-total">83</div>
+            </div>
+          </div>
+          <div class="platforms__content">
+            <div class="platforms__content-row">
+              <div class="platforms__content-item">
+                <div class="total-line"></div>
+                Google Chrome
+              </div>
+              <div class="platforms__content-total">46</div>
+            </div>
+            <div class="platforms__content-row">
+              <div class="platforms__content-item">
+                <div class="total-line"></div>
+                Safari
+              </div>
+              <div class="platforms__content-total">8</div>
+            </div>
+            <div class="platforms__content-row">
+              <div class="platforms__content-item">
+                <div class="total-line"></div>
+                Other
+              </div>
+              <div class="platforms__content-total">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__item">
+          Please rate <a href="#">the forms</a> <span>★★★★★</span> on <a href="#" target="_blank">WordPress.org</a> to help us spread the word. Thank you from the forms team!
+        </div>
+        <div class="footer__item">
+          Version 1.0.1
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="js/main.js"></script>
+<script src="./js/select.js"></script>
+</body>
+</html>

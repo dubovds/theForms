@@ -1,0 +1,206 @@
+[data-tooltip]::after {
+  @include font(12px, 500);
+  @include transition;
+  content: attr(data-tooltip);
+  opacity: 0;
+  pointer-events: none;
+
+  position: absolute;
+  width: max-content;
+  top: 20px;
+  left: 51px;
+  background-color: #363636;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+}
+
+.editor-template {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding-top: 80px;
+
+  &.show {
+    @include flex(normal, center);
+  }
+
+  &__wrapper {
+    width: 1074px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    margin-top: 60px;
+  }
+
+  &__item {
+    @include font(14px, 400);
+    @include transition;
+    padding: 30px;
+    color: #606060;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+
+    &:nth-child(1){
+      .editor-template__title-icon {
+        background-color: #2285fc;
+      }
+    }
+
+    &:nth-child(2){
+      .editor-template__title-icon {
+        background-color: #fd7d57;
+      }
+    }
+
+    &:nth-child(3){
+      .editor-template__title-icon {
+        background-color: #39c776;
+      }
+    }
+
+    &:nth-child(4){
+      .editor-template__title-icon {
+        background-color: #22d0fc;
+      }
+    }
+
+    &:nth-child(5){
+      .editor-template__title-icon {
+        background-color: #fdab57;
+      }
+    }
+
+    &:nth-child(6){
+      .editor-template__title-icon {
+        background-color: #e84f4f;
+      }
+    }
+
+    &:nth-child(7){
+      .editor-template__title-icon {
+        background-color: #eb67d0;
+      }
+    }
+
+    &:nth-child(8){
+      .editor-template__title-icon {
+        background-color: #7557e5;
+      }
+    }
+
+    &:nth-child(9){
+      .editor-template__title-icon {
+        background-color: #6875e2;
+      }
+    }
+  }
+
+  &__title {
+    @include flex(center);
+    margin-bottom: 20px;
+
+    h2 {
+      @include font(18px, bold);
+      color: #363636;
+    }
+  }
+
+  &__title-icon {
+    @include flex(center, center);
+    width: 42px;
+    height: 42px;
+    margin-right: 24px;
+    border-radius: 8px;
+    color: #ffffff;
+  }
+
+  &__close-btn {
+    @include transition;
+    @include flex(center, center);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 40px;
+    right: 40px;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    color: #363636;
+    transform: rotate(45deg);
+    font-size: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#e8e8e8, 10%);
+    }
+  }
+}
+
+.editor {
+  @include flex();
+  margin-top: 40px;
+
+  &__wrapper {
+    @include flex();
+    padding-left: 141px;
+  }
+}
+
+//menu editor
+.editor-menu {
+  width: 81px;
+  height: 100vh;
+  padding: 0 20px;
+  border-right: 1px solid #ececec;
+
+  &__list {
+    &:first-child {
+      margin-bottom: 6px;
+      border-bottom: 1px solid #d8d8d8;
+    }
+  }
+
+  &__item {
+    @include transition;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 6px;
+    padding: 12px;
+    border-radius: 8px;
+    color: #363636;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+
+    .font-icon:after,
+    .font-icon:before {
+      padding: 0;
+      color: #363636;
+    }
+  }
+}
+
+//editor panel. use for component panel and settings panel
+
+.editor-panel {
+  display: none;
+}

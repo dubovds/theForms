@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__item">
+    <div class="header__logo"></div>
+    <div class="header__menu">
+      <ul class="main-menu">
+        <li>
+          <a href="#">
+            Forms
+          </a>
+        </li>
+        <li>
+          <a href="statistics.html">
+            Statistics
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Add-Ons
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Support
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="header__item">
+    <button class="menu-page__button">
+      Publish Form
+    </button>
+  </div>
+</header>
+
+<div class="editor">
+
+  <nav class="editor-menu">
+    <ul class="editor-menu__list">
+      <li class="editor-menu__item" data-tooltip="Form Fields">
+        <div class="font-icon icon-fields-icon-01"></div>
+      </li>
+      <li class="editor-menu__item">
+        <div class="font-icon icon-action-icon-01"></div>
+      </li>
+      <li class="editor-menu__item">
+        <div class="font-icon icon-logic-icon-01"></div>
+      </li>
+    </ul>
+
+    <ul class="editor-menu__list">
+      <li class="editor-menu__item">
+        <div class="font-icon icon-archive"></div>
+      </li>
+      <li class="editor-menu__item">
+        <div class="font-icon icon-settings"></div>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="editor__wrapper">
+    <div class="editor-panel">panel</div>
+    <div class="constructor">constructor</div>
+  </div>
+</div>
+<!--Choose template section-->
+<!--add .show to open -->
+<div class="editor-template">
+  <div class="editor-template__wrapper">
+    <div class="editor-template__close-btn" id="editor-template__close-btn">
+      <div class="font-icon icon-plus"></div>
+    </div>
+    <h1 class="title-page">
+      Choose template
+    </h1>
+    <div class="editor-template__grid">
+      <div class="editor-template__item">
+        <div class="editor-template__title">
+          <div class="editor-template__title-icon font-icon icon-icon-1"></div>
+          <h2>Blank Form</h2>
+        </div>
+        <div class="editor-template__text">
+          The blank form allows you to create any type of form using our drag & drop builder.
+        </div>
+      </div>
+      <div class="editor-template__item">
+        <div class="editor-template__title">
+          <div class="editor-template__title-icon font-icon icon-icon-1"></div>
+          <h2>Collect feedback</h2>
+        </div>
+        <div class="editor-template__text">
+          Collect feedback for an event, blog post, or anything else. You can add and remove fields as needed.
+        </div>
+      </div>
+      <div class="editor-template__item">
+        <div class="editor-template__title">
+          <div class="editor-template__title-icon font-icon icon-icon-1"></div>
+          <h2>Contact Us</h2>
+        </div>
+        <div class="editor-template__text">
+          Allow your users to contact you with this simple contact form. You can add and remove fields as needed.
+        </div>
+      </div>
+      <div class="editor-template__item">
+        <div class="editor-template__title">
+          <div class="editor-template__title-icon font-icon icon-icon-1"></div>
+          <h2>Crrate a Post</h2>
+        </div>
+        <div class="editor-template__text">
+          Allow users to create posts from the front-end using a form, including custom post meta!
+        </div>
+      </div>
+      <div class="editor-template__item">
+        <div class="editor-template__title">
+          <div class="editor-template__title-icon font-icon icon-icon-1"></div>
+          <h2>Edit User Profile</h2>
+        </div>
+        <div class="editor-template__text">
+          Allow WordPress users to edit their profiles from the front-end, including custom user meta!
+        </div>
+      </div>
+      <div class="editor-template__item">
+        <div class="editor-template__title">
+          <div class="editor-template__title-icon font-icon icon-icon-1"></div>
+          <h2>Event Registration</h2>
+        </div>
+        <div class="editor-template__text">
+          Allow user to register for your next event this easy to complete form. You can add and remove fields as needed.
+        </div>
+      </div>
+      <div class="editor-template__item">
+        <div class="editor-template__title">
+          <div class="editor-template__title-icon font-icon icon-icon-1"></div>
+          <h2>Job Application</h2>
+        </div>
+        <div class="editor-template__text">
+          Allow users to apply for a job. You can add and remove fields as needed.
+        </div>
+      </div>
+      <div class="editor-template__item">
+        <div class="editor-template__title">
+          <div class="editor-template__title-icon font-icon icon-icon-1"></div>
+          <h2>Quote Request</h2>
+        </div>
+        <div class="editor-template__text">
+          Manage quote requests from your website easily with this template. You can add and remove fields as needed.
+        </div>
+      </div>
+      <div class="editor-template__item">
+        <div class="editor-template__title">
+          <div class="editor-template__title-icon font-icon icon-icon-1"></div>
+          <h2>Stripe Payment</h2>
+        </div>
+        <div class="editor-template__text">
+          Collect a payment using Stripe. You can add and remove fields as needed.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Choose template section-->
+
+
+<script src="js/main.js"></script>
+<script>
+    let template = document.querySelector('.editor-template');
+    let templateClose = document.querySelector('#editor-template__close-btn');
+
+    templateClose.addEventListener('click', (e) => {
+        template.classList.remove('show');
+    });
+</script>
+</body>
+</html>
