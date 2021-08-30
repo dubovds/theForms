@@ -135,7 +135,7 @@ button {
 }
 .header__logo {
   width: 97px;
-  height: 17px;
+  height: 18px;
   background-image: url("../images/logo.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -208,6 +208,9 @@ button {
   color: #2285fc;
   border-bottom-color: #2285fc;
 }
+.main-menu__settings .icon-settings:after {
+  transform: translateY(1.5px);
+}
 
 #search {
   width: 16px;
@@ -249,6 +252,10 @@ button {
   -ms-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+}
+#search-icon:before {
+  font-size: 16px;
+  transform: translateY(2px);
 }
 
 #search.active {

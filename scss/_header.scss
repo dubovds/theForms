@@ -20,7 +20,7 @@
 
   &__logo {
     width: 97px;
-    height: 17px;
+    height: 18px;
     background-image: url("../images/logo.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -103,6 +103,12 @@
       border-bottom-color: $clear-blue;
     }
   }
+
+  &__settings {
+    .icon-settings:after {
+      transform: translateY(1.5px);
+    }
+  }
 }
 
 // Search
@@ -135,7 +141,12 @@
 }
 
 #search-icon {
-  @include transition
+  @include transition;
+
+  &:before {
+    font-size: 16px;
+    transform: translateY(2px);
+  }
 }
 
 #search.active {
