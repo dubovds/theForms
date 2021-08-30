@@ -4,6 +4,15 @@
   justify-content: space-between;
   text-align: center;
 
+  &_editor {
+    padding: 21px 30px;
+    box-shadow: 0 1px 0 0 #ececec;
+
+    .header__logo {
+      margin-right: 20px;
+    }
+  }
+
   &__item {
     display: flex;
     align-items: center;
@@ -17,6 +26,32 @@
     background-position: center;
     background-size: 100%;
     margin-right: 50px;
+  }
+
+  &__back {
+    position: relative;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 24px;
+      background-color: #d8d8d8;
+      top: 4.5px;
+      right: 0;
+    }
+
+    .icon-arrow-left:before {
+      color: $black;
+      font-size: 10px;
+    }
+  }
+
+  &__action-name {
+    @include font(15px, 500);
+    margin-left: 40px;
   }
 }
 

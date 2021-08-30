@@ -7,35 +7,20 @@
   <link rel="stylesheet" href="scss/main.css">
 </head>
 <body>
-<header class="header">
+<header class="header header_editor">
   <div class="header__item">
     <div class="header__logo"></div>
-    <div class="header__menu">
-      <ul class="main-menu">
-        <li>
-          <a href="#">
-            Forms
-          </a>
-        </li>
-        <li>
-          <a href="statistics.html">
-            Statistics
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Add-Ons
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Support
-          </a>
-        </li>
-      </ul>
+    <button class="header__back">
+      <div class="font-icon icon-arrow-left"></div>
+    </button>
+    <div class="header__action-name">
+      Create new form
     </div>
   </div>
   <div class="header__item">
+    <a href="#" class="menu-page__preview-form font-icon icon-eye">
+      Preview Form
+    </a>
     <button class="menu-page__button">
       Publish Form
     </button>
@@ -49,10 +34,10 @@
       <li class="editor-menu__item" data-tooltip="Form Fields">
         <div class="font-icon icon-fields-icon-01"></div>
       </li>
-      <li class="editor-menu__item">
+      <li class="editor-menu__item" data-tooltip="Actions">
         <div class="font-icon icon-action-icon-01"></div>
       </li>
-      <li class="editor-menu__item">
+      <li class="editor-menu__item" data-tooltip="Logic Jump">
         <div class="font-icon icon-logic-icon-01"></div>
       </li>
     </ul>
@@ -70,7 +55,17 @@
 
   <div class="editor__wrapper">
     <div class="editor-panel">panel</div>
-    <div class="constructor">constructor</div>
+    <div class="constructor">
+      <div class="constructor__block">
+        <h1 class="constructor__page-title">Blank form</h1>
+        <div class="constructor__page-description">
+          Get started by adding your first form field.
+        </div>
+        <button class="add-btn">
+          Add field
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 <!--Choose template section-->

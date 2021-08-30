@@ -41,6 +41,18 @@
     }
   }
 
+  &__preview-form {
+    display: flex;
+    align-items: center;
+    margin-right: 26px;
+
+    &.font-icon {
+      &:before {
+        margin-right: 10px;
+      }
+    }
+  }
+
   &__view {
     @include flex-center();
     margin-right: 49px;
