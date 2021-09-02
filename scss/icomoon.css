@@ -138,3 +138,9 @@
     content: "\e91e";
     color: #fff;
 }
+.icon-duplicate:before {
+    content: "\e91f";
+}
+.icon-delete:before {
+    content: "\e920";
+}

@@ -23,3 +23,20 @@
   -o-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }
+
+//===== PLACEHOLDER ===
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
