@@ -166,7 +166,6 @@
 //menu editor
 .editor-menu {
   width: 81px;
-  height: 85.5vh;
   padding: 0 20px;
   border-right: 1px solid #ececec;
 
@@ -209,14 +208,14 @@
 .constructor {
   width: 580px;
 
-  &__page-title {
+  .top-title {
     @include font(32px, 900);
     line-height: 1;
-  }
 
-  &__page-description {
-    @include font(14px, 400);
-    margin-top: 12px;
+    &__subtitle {
+      @include font(14px, 400);
+      margin-top: 12px;
+    }
   }
 
   .add-btn {
@@ -434,8 +433,7 @@
     margin-top: 11px;
   }
   &__radio-container {
-    margin-bottom: 11px;
-    margin-right: 40px;
+    margin-top: 11px;
   }
   .custom-checkbox {
     & + label {
@@ -465,31 +463,31 @@
 .price_row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
 
   .constructor__price-container {
-    width: 31.4%;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 48.248%;
+    margin: 5px;
+    padding: 20px;
+    border: 1px dashed #dbdbdb;
+    border-radius: 10px;
 
     &:first-child {
-      margin-top: 10px;
-    }
-    false {
-      margin-right: 0;
+      margin-top: 5px;
     }
     .custom-radio + label {
       display: block;
-      margin-top: 33px;
+      margin-top: 31px;
       padding-left: 0;
 
       &:before {
-        top: -31px;
+        top: -30px;
       }
     }
     .custom-radio:checked + label {
       &:after {
-        top: -25px;
+        top: -22px;
       }
     }
     .constructor__component-description {
@@ -503,32 +501,28 @@
 }
 .constructor__price-container {
   position: relative;
-  margin-top: 6px;
-  padding: 16px 17px;
-  border: 2px solid #e9ebec;
-  border-radius: $radius;
+  margin-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: dashed 1px #dbdbdb;
+
+  display: flex;
+  justify-content: space-between;
 
   &:first-child {
-    margin-top: 20px;
+    margin-top: 16px;
   }
   .constructor__radio-container {
-    margin-bottom: 0;
+    margin-top: 0;
   }
-  .custom-radio + label {
-    font-weight: 500;
-    font-size: 14px;
-    padding-left: 36px;
-  }
+
   .constructor__component-description {
-    padding-left: 36px;
-    margin-top: 3px;
+    @include font(13px, 400);
+    padding-left: 31px;
+    margin-top: 6px;
   }
-  .price__price-block {
-    color: #fe544b;
-    font-size: 14px;
-    font-weight: bold;
-    position: absolute;
-    top: 19px;
-    right: 17px;
+
+  .price__value {
+    @include font(16px, 400);
+    color: $clear-blue;
   }
 }

@@ -56,18 +56,32 @@
   <div class="editor__wrapper">
     <div class="editor-panel">panel</div>
     <div class="constructor">
-      <div class="constructor__block">
-        <h1 class="constructor__page-title">Blank form</h1>
-        <div class="constructor__page-description">
-          Get started by adding your first form field.
+<!--      <div class="constructor__block">-->
+<!--        <h1 class="constructor__page-title">Blank form</h1>-->
+<!--        <div class="constructor__page-description">-->
+<!--          Get started by adding your first form field.-->
+<!--        </div>-->
+<!--        <button class="add-btn">-->
+<!--          Add field-->
+<!--        </button>-->
+<!--      </div>-->
+
+
+      <div class="constructor__component">
+        <div class="constructor__component-settings">
+          <div class="constructor__component-settings-content">
+            <button class="font-icon icon-duplicate" data-tooltip="Duplicate"></button>
+            <button class="font-icon icon-delete" data-tooltip="Delete field"></button>
+            <button class="font-icon icon-settings-b" data-tooltip="Settings field"></button>
+          </div>
         </div>
-        <button class="add-btn">
-          Add field
-        </button>
+        <div class="top-title">
+          Put the form title here
+        </div>
+        <div class="top-title__subtitle">
+          Here is the place of the form description
+        </div>
       </div>
-
-
-
       <div class="constructor__component input-click">
         <div class="constructor__component-settings">
           <div class="constructor__component-settings-content">
@@ -150,6 +164,187 @@
           </div>
           <div class="constructor__component-description">
             Checkbox list description
+          </div>
+        </div>
+      </div>
+      <div class="constructor__row">
+        <div class="constructor__component">
+          <div class="constructor__component-settings">
+            <div class="constructor__component-settings-content">
+              <button class="font-icon icon-duplicate" data-tooltip="Duplicate"></button>
+              <button class="font-icon icon-delete" data-tooltip="Delete field"></button>
+              <button class="font-icon icon-settings-b" data-tooltip="Settings field"></button>
+            </div>
+          </div>
+          <div class="constructor__component-title">
+            Radio list title
+          </div>
+          <div class="constructor__radio-container">
+            <input class="custom-radio" id="styled-radio-1" type="radio" value="value1">
+            <label for="styled-radio-1">Option 1</label>
+          </div>
+          <div class="constructor__radio-container">
+            <input class="custom-radio" id="styled-radio-2" type="radio" value="value1">
+            <label for="styled-radio-2">Option 1</label>
+          </div>
+          <div class="constructor__radio-container">
+            <input class="custom-radio" id="styled-radio-3" type="radio" value="value1">
+            <label for="styled-radio-3">Option 1</label>
+          </div>
+        </div>
+        <div class="constructor__component">
+          <div class="constructor__component-settings">
+            <div class="constructor__component-settings-content">
+              <button class="font-icon icon-duplicate" data-tooltip="Duplicate"></button>
+              <button class="font-icon icon-delete" data-tooltip="Delete field"></button>
+              <button class="font-icon icon-settings-b" data-tooltip="Settings field"></button>
+            </div>
+          </div>
+          <div class="constructor__component-title">
+            Radio list title
+          </div>
+          <div class="constructor__radio-container">
+            <input class="custom-radio" id="styled-radio-4" type="radio" value="value1">
+            <label for="styled-radio-4">Option 4</label>
+          </div>
+          <div class="constructor__component-description">
+            Checkbox list description
+          </div>
+        </div>
+      </div>
+      <!--Price list-->
+      <div class="constructor__component">
+        <div class="constructor__component-settings">
+          <div class="constructor__component-settings-content">
+            <button class="font-icon icon-duplicate" data-tooltip="Duplicate"></button>
+            <button class="font-icon icon-delete" data-tooltip="Delete field"></button>
+            <button class="font-icon icon-settings-b" data-tooltip="Settings field"></button>
+          </div>
+        </div>
+        <div class="constructor__component-title">
+          Price list
+        </div>
+        <div class="price">
+          <div class="constructor__price-container">
+            <div class="price__item">
+              <div class="constructor__radio-container">
+                <input class="custom-radio" id="price-1" type="radio" value="value1">
+                <label for="price-1">Option 1</label>
+              </div>
+              <div class="constructor__component-description">
+                Option description
+              </div>
+            </div>
+            <div class="price__value">
+              499$
+            </div>
+          </div>
+          <div class="constructor__price-container">
+            <div class="price__item">
+              <div class="constructor__radio-container">
+                <input class="custom-radio" id="price-2" type="radio" value="value2">
+                <label for="price-2">Option 2 Option 2 Option 2 Option 2 Option 2
+                  Option 2 Option 2 Option 2 Option 2 Option 2 Option 2 Option 2
+                </label>
+              </div>
+              <div class="constructor__component-description">
+                Option description
+              </div>
+            </div>
+            <div class="price__value">
+              499$
+            </div>
+          </div>
+          <div class="constructor__price-container">
+            <div class="price__item">
+              <div class="constructor__radio-container">
+                <input class="custom-radio" id="price-3" type="radio" value="value3">
+                <label for="price-3">Option 3 Option 3
+                </label>
+              </div>
+              <div class="constructor__component-description">
+                Option description
+              </div>
+            </div>
+            <div class="price__value">
+              499$
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Price grid-->
+      <div class="constructor__component price-click">
+        <div class="constructor__component-settings">
+          <div class="constructor__component-settings-content">
+            <button class="font-icon icon-duplicate" data-tooltip="Duplicate"></button>
+            <button class="font-icon icon-delete" data-tooltip="Delete field"></button>
+            <button class="font-icon icon-settings-b" data-tooltip="Settings field"></button>
+          </div>
+        </div>
+        <div class="constructor__component-title">
+          Price Grid
+        </div>
+        <div class="price price_row">
+          <div class="constructor__price-container">
+            <div class="price__item">
+              <div class="constructor__radio-container constructor__radio-container_price">
+                <input class="custom-radio" id="price-radio-6" type="radio" value="value1" name="test">
+                <label for="price-radio-6">Label price 1</label>
+              </div>
+              <div class="constructor__component-description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </div>
+            </div>
+            <div class="price__value">29.99$</div>
+          </div>
+          <div class="constructor__price-container">
+            <div class="price__item">
+              <div class="constructor__radio-container constructor__radio-container_price">
+                <input class="custom-radio" id="price-radio-7" type="radio" value="value1" name="test">
+                <label for="price-radio-7">Label price 2</label>
+              </div>
+              <div class="constructor__component-description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              </div>
+            </div>
+            <div class="price__value">29.99$</div>
+          </div>
+          <div class="constructor__price-container">
+            <div class="price__item">
+              <div class="constructor__radio-container constructor__radio-container_price">
+                <input class="custom-radio" id="price-radio-8" type="radio" value="value1" name="test">
+                <label for="price-radio-8">Label price 3</label>
+              </div>
+              <div class="constructor__component-description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              </div>
+            </div>
+            <div class="price__value">29.99$</div>
+          </div>
+          <div class="constructor__price-container">
+            <div class="price__item">
+              <div class="constructor__radio-container constructor__radio-container_price">
+                <input class="custom-radio" id="price-radio-9" type="radio" value="value1" name="test">
+                <label for="price-radio-9">Label price 1</label>
+              </div>
+              <div class="constructor__component-description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              </div>
+            </div>
+            <div class="price__value">29.99$</div>
+          </div>
+          <div class="constructor__price-container">
+            <div class="price__item">
+              <div class="constructor__radio-container constructor__radio-container_price">
+                <input class="custom-radio" id="price-radio-10" type="radio" value="value1" name="test">
+                <label for="price-radio-10">Label price 1</label>
+              </div>
+              <div class="constructor__component-description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              </div>
+            </div>
+            <div class="price__value">29.99$</div>
           </div>
         </div>
       </div>
