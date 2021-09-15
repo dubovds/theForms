@@ -159,15 +159,18 @@
 
   &__wrapper {
     @include flex();
-    padding-left: 60px;
+    position: relative;
   }
 }
 
 //menu editor
 .editor-menu {
+  position: relative;
   width: 81px;
   padding: 0 20px;
+  background-color: #ffffff;
   border-right: 1px solid #ececec;
+  z-index: 10;
 
   &__list {
     &:first-child {
@@ -199,14 +202,10 @@
   }
 }
 
-//editor panel. use for component panel and settings panel
-
-.editor-panel {
-  display: none;
-}
-
 .constructor {
+  @include transition;
   width: 580px;
+  margin-left: 60px;
 
   .top-title {
     @include font(32px, 900);
@@ -501,8 +500,9 @@
 }
 .constructor__price-container {
   position: relative;
+  background-color: #ffffff;
   margin-top: 14px;
-  padding-bottom: 14px;
+  padding: 14px 5px;
   border-bottom: dashed 1px #dbdbdb;
 
   display: flex;

@@ -53,8 +53,123 @@
   </nav>
 
 
-  <div class="editor__wrapper">
-    <div class="editor-panel">panel</div>
+  <div class="editor__wrapper components-panel-open">
+    <div class="components-panel">
+      <div class="components-panel-top-block">
+        <div class="components-panel-title">
+          Components
+        </div>
+        <div class="components-panel-close font-icon icon-delete">
+
+        </div>
+      </div>
+      <div class="components-panel-block">
+        <div class="cp-block__wrapper">
+          <div class="cp-block__item">
+            Title
+          </div>
+          <div class="cp-block__item">
+            Subtitle
+          </div>
+          <div class="cp-block__item">
+            Blank
+          </div>
+          <div class="cp-block__item">
+            Image Gallery
+          </div>
+          <div class="cp-block__item">
+            Download Link
+          </div>
+          <div class="cp-block__item">
+            Free Text
+          </div>
+        </div>
+      </div>
+      <div class="components-panel-block">
+        <div class="cp-block__wrapper">
+          <div class="cp-block__item">
+            Text
+          </div>
+          <div class="cp-block__item">
+            Email
+          </div>
+          <div class="cp-block__item">
+            Phone
+          </div>
+          <div class="cp-block__item">
+            Paragraph
+          </div>
+          <div class="cp-block__item">
+            File Upload
+          </div>
+          <div class="cp-block__item">
+            SignaturePad
+          </div>
+          <div class="cp-block__item">
+            Checkbox
+          </div>
+          <div class="cp-block__item">
+            Radio
+          </div>
+          <div class="cp-block__item">
+            Select
+          </div>
+          <div class="cp-block__item">
+            Confirmation
+          </div>
+          <div class="cp-block__item">
+            Submit
+          </div>
+        </div>
+      </div>
+      <div class="components-panel-block">
+        <div class="cp-block__wrapper">
+          <div class="cp-block__item">
+            First Name
+          </div>
+          <div class="cp-block__item">
+            Last Name
+          </div>
+          <div class="cp-block__item">
+            Address 1
+          </div>
+          <div class="cp-block__item">
+            Address 2
+          </div>
+          <div class="cp-block__item">
+            Country
+          </div>
+          <div class="cp-block__item">
+            State/Region
+          </div>
+          <div class="cp-block__item">
+            City
+          </div>
+          <div class="cp-block__item">
+            Zip/Post Code
+          </div>
+        </div>
+      </div>
+      <div class="components-panel-block">
+        <div class="cp-block__wrapper">
+          <div class="cp-block__item">
+            Multistep Form
+          </div>
+          <div class="cp-block__item">
+            Hidden
+          </div>
+          <div class="cp-block__item">
+            Price
+          </div>
+          <div class="cp-block__item">
+            Date
+          </div>
+          <div class="cp-block__item">
+            Time
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="constructor">
 <!--      <div class="constructor__block">-->
 <!--        <h1 class="constructor__page-title">Blank form</h1>-->
@@ -110,6 +225,22 @@
           email title
         </div>
         <input type="text" class="input-default input-default_light" placeholder="Your Email">
+        <div class="constructor__component-description">
+          Input description
+        </div>
+      </div>
+      <div class="constructor__component">
+        <div class="constructor__component-settings">
+          <div class="constructor__component-settings-content">
+            <button class="font-icon icon-duplicate" data-tooltip="Duplicate"></button>
+            <button class="font-icon icon-delete" data-tooltip="Delete field"></button>
+            <button class="font-icon icon-settings-b" data-tooltip="Settings field"></button>
+          </div>
+        </div>
+        <div class="constructor__component-title">
+          Text area
+        </div>
+        <textarea name="" id="" cols="30" rows="10" class="textarea-default"></textarea>
         <div class="constructor__component-description">
           Input description
         </div>
@@ -567,6 +698,17 @@
 
     templateClose.addEventListener('click', (e) => {
         template.classList.remove('show');
+    });
+
+    // open and close panel of components
+    let addComponent = document.querySelector('.add-btn');
+    addComponent.addEventListener('click', function(){
+        document.querySelector('.editor__wrapper').classList.add('components-panel-open')
+    });
+
+    let closePanelComponent = document.querySelector('.components-panel-close');
+    closePanelComponent.addEventListener('click', function(){
+        document.querySelector('.editor__wrapper').classList.remove('components-panel-open');
     });
 </script>
 </body>

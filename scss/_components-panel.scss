@@ -1,0 +1,81 @@
+//components panel. use for component panel and settings panel
+
+.components-panel {
+  @include transition;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%);
+  width: 500px;
+  height: 100%;
+  background-color: #f5f5f5;
+  padding: 24px 30px;
+  margin-left: 20px;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.components-panel-open {
+  .components-panel {
+    transform: translateX(0);
+  }
+
+  .constructor {
+    transform: translateX(520px);
+  }
+}
+
+.components-panel-top-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
+.components-panel-title {
+  @include font(15px, 500);
+}
+
+.components-panel-close {
+  @include transition;
+  cursor: pointer;
+  color: #b1b1b1;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.components-panel-block {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2e2e2;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.cp-block {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+  }
+
+  &__item {
+    @include transition;
+    @include font(13px, 500);
+    flex: 0 1 47.78%;
+    background-color: #ffffff;
+    margin: 5px;
+    padding: 9px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #d6e8ff;
+      color: #2c8afb;
+    }
+  }
+}
