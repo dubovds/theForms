@@ -2454,6 +2454,8 @@ button {
   transition: all 0.3s ease-in;
   font-size: 13px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
   flex: 0 1 47.78%;
   background-color: #ffffff;
   margin: 5px;
@@ -2464,6 +2466,9 @@ button {
 .cp-block__item:hover {
   background-color: #d6e8ff;
   color: #2c8afb;
+}
+.cp-block__item:before {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

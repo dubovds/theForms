@@ -66,6 +66,8 @@
   &__item {
     @include transition;
     @include font(13px, 500);
+    display: flex;
+    align-items: center;
     flex: 0 1 47.78%;
     background-color: #ffffff;
     margin: 5px;
@@ -76,6 +78,10 @@
     &:hover {
       background-color: #d6e8ff;
       color: #2c8afb;
+    }
+
+    &:before {
+      margin-right: 10px;
     }
   }
 }

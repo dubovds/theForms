@@ -144,3 +144,82 @@
 .icon-delete:before {
     content: "\e920";
 }
+.icon-first-name:before {
+    content: "\e921";
+}
+.icon-country:before {
+    content: "\e922";
+}
+.icon-city:before {
+    content: "\e923";
+}
+.icon-checkbox:before {
+    content: "\e924";
+}
+.icon-confirmation:before {
+    content: "\e925";
+}
+.icon-email:before {
+    content: "\e926";
+}
+.icon-blank:before {
+    content: "\e927";
+}
+.icon-address:before {
+    content: "\e928";
+}
+.icon-zip-code:before {
+    content: "\e929";
+}
+.icon-text:before {
+    content: "\e92a";
+}
+.icon-submit:before {
+    content: "\e92b";
+}
+.icon-form:before {
+    content: "\e92c";
+}
+.icon-gallary:before {
+    content: "\e92d";
+}
+.icon-hidden:before {
+    content: "\e92e";
+}
+.icon-select:before {
+    content: "\e92f";
+}
+.icon-paragraph:before {
+    content: "\e930";
+}
+.icon-free-text:before {
+    content: "\e931";
+}
+.icon-price:before {
+    content: "\e932";
+}
+.icon-phone:before {
+    content: "\e933";
+}
+.icon-signature:before {
+    content: "\e934";
+}
+.icon-radio:before {
+    content: "\e935";
+}
+.icon-region:before {
+    content: "\e936";
+}
+.icon-time:before {
+    content: "\e937";
+}
+.icon-title:before {
+    content: "\e938";
+}
+.icon-upload:before {
+    content: "\e939";
+}
+.icon-subtitle:before {
+    content: "\e93a";
+}
+
